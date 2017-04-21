@@ -1,0 +1,6 @@
+[Activity]
+name = Install Activities
+activity_version = 3
+bundle_id = org.sugarlabs.webinstallactivities
+exec = sugar-activity-web
+icon = activity-install

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Install Activities</title>
+<link rel="stylesheet" href="lib/sugar-web/graphics/css/sugar.css">
+<link rel="stylesheet" href="css/activity.css">
+<script data-main="js/loader" src="lib/require.js"></script>
+</head>
+
+
+<body>
+  <div id="main-toolbar" class="toolbar">
+    <button class="toolbutton" id="activity-button" title="My Activity"></button>
+    <hr/>
+    <button class="toolbutton" id="recommended-button" title="Recommended" onclick="document.getElementById('IframeASLO').setAttribute('src', 'http://activities.sugarlabs.org/sugar/?featured=recommended#featured');"> <img src='icons/recommended.svg' alt='recommended'> </button>
+    <button class="toolbutton" id="popular-button" title="Popular" onclick="document.getElementById('IframeASLO').setAttribute('src', 'http://activities.sugarlabs.org/sugar/?featured=popular#featured');"> <img src='icons/popular.svg' alt='popular'> </button>
+    <button class="toolbutton" id="added-button" title="Added" onclick="document.getElementById('IframeASLO').setAttribute('src', 'http://activities.sugarlabs.org/sugar/?featured=added#featured');"> <img src='icons/added.svg' alt='added'> </button>
+    <button class="toolbutton" id="updated-button" title="Updated" onclick="document.getElementById('IframeASLO').setAttribute('src', 'http://activities.sugarlabs.org/sugar/?featured=updated#featured');"> <img src='icons/update.svg' alt='update'> </button>
+
+    <button class="toolbutton pull-right" id="stop-button" title="Stop"></button>
+  </div>
+  <div id="canvas">
+        <IFRAME
+            src="http://activities.sugarlabs.org"
+            marginWidth=0 marginHeight=0 frameBorder=0
+            id=IframeASLO
+            style="width:100%; height:100%;" frameSpacing=0>
+        </IFRAME>
+    </div>
+  </div>
+</body>
+</html>
